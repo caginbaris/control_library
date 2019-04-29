@@ -1,0 +1,17 @@
+Objects/phaselockedloop.o
+Objects/phaselockedloop.d
+Objects/ArInp.Scr
+DebugConfig/Target_STM32H750VBTx_1.0.0.dbgconf
+DebugConfig/Target_1_STM32H750VBTx_1.0.0.dbgconf
+Objects/transformations.o
+Objects/transformations.d
+Objects/transformations.crf
+Objects/clib_Target.dep
+Objects/clib.build_log.htm
+clib.uvprojx
+clib.uvoptx
+clib.uvguix.baris.cengiz
+Objects/controllers.o
+Objects/controllers.d
+Objects/controllers.crf
+Objects/phaselockedloop.crf
