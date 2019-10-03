@@ -4,21 +4,22 @@
 
 typedef struct pll_parameters{
 
-		float Vd;
-		float Vdf;
-		float Iout;
+		double Vd;
+		double Vdf;
+		double Pout;
+		double Iout;
+	  double PIout;
+		double out;
 	
-	struct {
+		double ts;	
 		
-		float ts;	
-		
-	}input;	
-
 }pll_parameters;
 
-void PLL_initialization(pll_parameters* pll, float ts);
 
-#define PLL_THETA(Vpll,theta,pll) theta=PLL_theta (Vpll,theta,pll_parameters* pll)
+double PLL_theta (double Vpll,double Vrms , double theta,pll_parameters* pll);
+void PLL_initialization(pll_parameters* pll, double ts);
+
+#define PLL_THETA(Vpll,Vrms,theta,pll) theta=PLL_theta (Vpll,Vrms,theta,&pll)
 
 #endif
 

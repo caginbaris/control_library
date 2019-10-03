@@ -33,7 +33,7 @@ void piControllerInitialization(piData* pi,piInit init){
 
 void piControllerImplementaiton(piData* pi){
 	
-float q=1.0f;
+double q=1.0f;
 	
 if(pi->flag.enable){
 	
@@ -94,7 +94,9 @@ if(pi->flag.enable){
 	}
 	
 	}else{
- 
+		
+		
+  pi->state.Iout=pi->atRest.Iout;
 	pi->signal.controllerOutput=pi->atRest.Iout;
 
  }
