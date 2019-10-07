@@ -2,8 +2,7 @@
 #include "clib.h"
 
 
-#define active 	1
-#define passive	0
+
 
 
 void piControllerInitialization(piData* pi,piInit init){
@@ -95,9 +94,8 @@ if(pi->flag.enable){
 	
 	}else{
 		
-		
-  pi->state.Iout=pi->atRest.Iout;
-	pi->signal.controllerOutput=pi->atRest.Iout;
+  pi->state.Iout=pi->signal.atRestOutput;
+	pi->signal.controllerOutput=pi->signal.atRestOutput;
 
  }
 }

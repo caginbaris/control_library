@@ -10,6 +10,7 @@ typedef struct piInit{
 		double Kp;
 		double Ki;
 		double ts;
+		double atRest;
 
 	}parameter;
 
@@ -53,7 +54,7 @@ typedef struct piData{
 		double ref;
 		double feedback;	
 		double controllerOutput;
-
+		double atRestOutput;
 
 	}signal;
 
@@ -89,11 +90,11 @@ typedef struct piData{
 	}limit;
 	
 	
-	struct{
-		
-		double Iout;
 
-	}atRest;
+		
+		
+
+
 	
 	
 	
