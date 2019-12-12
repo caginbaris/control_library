@@ -89,15 +89,7 @@ typedef struct piData{
 
 	}limit;
 	
-	
 
-		
-		
-
-
-	
-	
-	
 	struct{
 		
 		uint32_t enable:1;

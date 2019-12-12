@@ -14,7 +14,6 @@
 
 void PLL_initialization(pll_parameters* pll, double ts){
 
-	pll=0;
 	pll->ts=ts;
 
 }

@@ -7,7 +7,7 @@
 
 void piControllerInitialization(piData* pi,piInit init){
 	
-	pi=0;
+	
 
 	pi->parameter.Ki=init.parameter.Ki;
 	pi->parameter.Kp=init.parameter.Kp;
@@ -32,7 +32,7 @@ void piControllerInitialization(piData* pi,piInit init){
 
 void piControllerImplementaiton(piData* pi){
 	
-double q=1.0f;
+double q=1.0;
 	
 if(pi->flag.enable){
 	
@@ -59,7 +59,7 @@ if(pi->flag.enable){
 	
 	//anti-windup
 	
-	q=1.0f;
+	q=1.0;
 	
 	if(pi->state.error>pi->limit.antiWindUp_Up)  {q=0.0f;}
 	if(pi->state.error<pi->limit.antiWindUp_Down){q=0.0f;}
